@@ -44,3 +44,16 @@ print(d)
 print(np.sin(a))
 # checks all the elements
 print(a<35)
+
+A = np.array( [[1,1],
+               [0,1]] )
+
+B = np.array([[2,0],
+              [3,4]] )
+
+# elementwise product
+print(A*B)
+# matrix product
+print(A@B)
+# another matrix product method
+print(A.dot(B))
