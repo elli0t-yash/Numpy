@@ -31,3 +31,16 @@ import sys
 # np.set_printoptions(threshold=sys.maxsize) [this statement is use to print full size of the array] 
 # print(np.arange(10000).reshape(100,100))
 
+#! Basic Operators
+a = np.array([20,30,40,50])
+b = np.arange(4)
+c = a - b
+print(c)
+
+# squaring every elements
+d = b**2 
+print(d)
+# sin of every elements
+print(np.sin(a))
+# checks all the elements
+print(a<35)
