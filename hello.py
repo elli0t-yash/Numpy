@@ -32,28 +32,37 @@ import sys
 # print(np.arange(10000).reshape(100,100))
 
 #! Basic Operators
-a = np.array([20,30,40,50])
-b = np.arange(4)
-c = a - b
-print(c)
+# a = np.array([20,30,40,50])
+# b = np.arange(4)
+# c = a - b
+# print(c)
 
 # squaring every elements
-d = b**2 
-print(d)
+# d = b**2 
+# print(d)
 # sin of every elements
-print(np.sin(a))
+# print(np.sin(a))
 # checks all the elements
-print(a<35)
+# print(a<35)
 
-A = np.array( [[1,1],
-               [0,1]] )
+# A = np.array( [[1,1],
+#                [0,1]] )
 
-B = np.array([[2,0],
-              [3,4]] )
+# B = np.array([[2,0],
+#               [3,4]] )
 
 # elementwise product
-print(A*B)
+# print(A*B)
 # matrix product
-print(A@B)
+# print(A@B)
 # another matrix product method
-print(A.dot(B))
+# print(A.dot(B))
+
+# sorting
+arr = np.array([2,1,5,3,7,4,6,8])
+print(np.sort(arr))
+
+# concatenate
+a = np.array([1,3,4,2])
+b = np.array([5,7,8,6])
+print(np.concatenate((a,b)))
