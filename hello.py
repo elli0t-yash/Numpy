@@ -293,3 +293,12 @@ error = (1/n) * np.sum(np.square(predictions - labels))
 
 print(error)
 
+a8 = np.array([1,2,3,4,5,6])
+np.save('new',a8)
+b1 = np.load('new.npy')
+print(b1)
+
+csv_arr = np.array([1,2,3,4,5,6,7,8])
+np.savetxt('new_file.csv', csv_arr)
+csv = np.loadtxt('new_file.csv')
+print(csv)
