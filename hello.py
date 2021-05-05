@@ -197,3 +197,26 @@ print(a4.min())
 print(a4.max())
 print(a4.min(axis=0)) # axis = 0 denotes column
 print(a4.min(axis=1)) # axis = 1 denotes row
+
+# creating matrix
+data0 = np.array([[1,2],[3,4]])
+print(data0)
+
+# slicing
+print(data0[0,1])
+print(data0[1:3])
+print(data0[0:2,0])
+print(data0.max())
+print(data0.min())
+print(data0.sum())
+# accessing rows and columns
+print(data0.max(axis=0))
+print(data0.max(axis=1))
+
+# multi-dimensional array with ones
+print(np.ones((4,3,2)))
+
+# array with random values
+rng = np.random.default_rng(0)
+print(rng.random(3))
+
