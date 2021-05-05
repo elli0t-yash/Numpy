@@ -242,3 +242,8 @@ print(unique_rows)
 unique_rows, indices, occurrence = np.unique(a_2d, axis=0, return_counts=True, return_index=True)
 print(indices)
 print(occurrence)
+
+arr5 = np.arange(6).reshape((2,3))
+print(arr5)
+print(arr5.transpose())
+print(arr5.T)
