@@ -85,3 +85,26 @@ arr_eg = np.array([[[0,1,2,3],
 print(arr_eg.ndim)
 # size
 print(arr_eg.size)
+
+# another way of reshaping
+arr1 = np.arange(6)
+# order: C means to read/write the elements using C-like index order, F means to read/write the elements using Fortran-like index order, A means to read/write the elements in Fortran-like index order if a is Fortran contiguous in memory, C-like order otherwise. (This is an optional parameter and doesn’t need to be specified.)
+print(np.reshape(arr1, newshape=(1,6), order ='C'))
+
+# how to add a new axis
+arr2 = np.array([1,2,3,4,5,6])
+print(arr2.shape)
+arr3 = arr2[np.newaxis, :]
+print(arr3.shape)
+
+# converting in row vector and column vector
+row_vec = arr2[np.newaxis, :]
+print(row_vec.shape)
+col_vec = arr2[:,np.newaxis]
+print(col_vec.shape)
+
+# changing index position to 1 
+b0 = np.expand_dims(arr2, axis=1)
+print(b0.shape)
+c0 = np.expand_dims(arr2, axis=0)
+print(c0.shape)
