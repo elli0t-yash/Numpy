@@ -273,3 +273,14 @@ print(arr7)
 arr7[:,1] = np.flip(arr7[:,1])
 print(arr7)
 
+# flatting the multi-d array
+x1 = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+a5 = x1.flatten()
+a5[0] = 99
+print(x1)
+print(a5)
+
+a6 = x1.ravel()
+a6[0] = 98
+print(x1)
+print(a6)
