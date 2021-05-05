@@ -138,3 +138,14 @@ print(fiveup)
 arrr=np.nonzero(d<5)
 print(arrr)
 
+list_of_coordinates = list(zip(arrr[0],arrr[1]))
+for coord in list_of_coordinates :
+    print(coord)
+
+print(d[arrr])
+
+# empty nonzero 
+not_there = np.nonzero(d == 42)
+print(not_there)
+
+
