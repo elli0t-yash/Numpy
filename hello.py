@@ -247,3 +247,29 @@ arr5 = np.arange(6).reshape((2,3))
 print(arr5)
 print(arr5.transpose())
 print(arr5.T)
+
+# reversing 1-D array
+arr6 = np.array([1,2,3,4,5,6,7,8])
+reversed_arr = np.flip(arr6)
+print(reversed_arr)
+
+# reversing 2-D array
+arr7 = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+reversed_arr_2d = np.flip(arr7)
+print(reversed_arr_2d)
+
+# reversing only rows
+reversed_arr_rows = np.flip(arr7, axis=0)
+print(reversed_arr_rows)
+# reversing only columns
+reversed_arr_cols = np.flip(arr7, axis=1)
+print(reversed_arr_cols)
+
+# reversing single row
+arr7[1] = np.flip(arr7[1])
+print(arr7)
+
+# reversing single column
+arr7[:,1] = np.flip(arr7[:,1])
+print(arr7)
+
