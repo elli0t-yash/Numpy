@@ -166,3 +166,20 @@ print(x)
 print(np.hsplit(x,3))
 print(np.hsplit(x,(3,4)))
 
+# copying syntax: b = a.copy()
+
+datas = np.array([1,2])
+ones = np.ones(2, dtype=int)
+print(datas + ones)
+print(datas - ones)
+print(datas * ones)
+print(datas / ones)
+
+r = np.array([1,2,3,4])
+print(r.sum())
+
+p = np.array([[1,1],[2,2]])
+# row-wise sum
+print(p.sum(axis=0))
+# column-wise sum
+print(p.sum(axis=1))
