@@ -183,3 +183,7 @@ p = np.array([[1,1],[2,2]])
 print(p.sum(axis=0))
 # column-wise sum
 print(p.sum(axis=1))
+
+# broadcasting(vector and scalar opertions)
+d1 = np.array([1.0,2.0])
+print(d1*1.6)
