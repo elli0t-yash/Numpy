@@ -148,4 +148,21 @@ print(d[arrr])
 not_there = np.nonzero(d == 42)
 print(not_there)
 
+a1 = np.array([1,2,3,4,5,6,7,8,9,10])
+arr0 = a1[3:8]
+print(arr0)
+
+a2 = np.array([[1,1],
+               [2,2]])
+
+a3 = np.array([[3,3],
+               [4,4]])
+
+print(np.vstack((a2,a3)))
+print(np.hstack((a2,a3)))
+
+x = np.arange(1,25).reshape(2,12)
+print(x)
+print(np.hsplit(x,3))
+print(np.hsplit(x,(3,4)))
 
