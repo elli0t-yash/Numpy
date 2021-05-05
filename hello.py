@@ -284,3 +284,12 @@ a6 = x1.ravel()
 a6[0] = 98
 print(x1)
 print(a6)
+
+# mathematical formulas
+predictions = np.array([1,1,1])
+labels = np.array([1,2,3])
+n = 3
+error = (1/n) * np.sum(np.square(predictions - labels))
+
+print(error)
+
