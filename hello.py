@@ -220,3 +220,25 @@ print(np.ones((4,3,2)))
 rng = np.random.default_rng(0)
 print(rng.random(3))
 
+# random array with values between 0 to 4
+print(rng.integers(5,size=(2,4)))
+
+arr4 = np.array([11,11,12,13,14,15,16,17,12,13,11,14,18,19,20])
+unique_values = np.unique(arr4)
+print(unique_values)
+
+unique_values, indices_list = np.unique(arr4, return_index=True)
+print(indices_list)
+unique_values, occurrence_count = np.unique(arr4, return_counts=True)
+print(occurrence_count)
+
+a_2d = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[1,2,3,4]])
+uniq_val = np.unique(a_2d)
+print(uniq_val)
+
+unique_rows = np.unique(a_2d, axis=0)
+print(unique_rows)
+
+unique_rows, indices, occurrence = np.unique(a_2d, axis=0, return_counts=True, return_index=True)
+print(indices)
+print(occurrence)
