@@ -108,3 +108,33 @@ b0 = np.expand_dims(arr2, axis=1)
 print(b0.shape)
 c0 = np.expand_dims(arr2, axis=0)
 print(c0.shape)
+
+# indexing and slicing 
+data = np.array([1,2,3])
+print(data[1])
+print(data[0:2])
+print(data[1:])
+print(data[-2:])
+print(data[-3:])
+
+d = np.array([[1 , 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+# unsorted result
+print(a[a<5])
+# sorted result
+print(np.sort(d[d<5]))
+
+five_up = (d >= 5)
+print(d[five_up])
+
+div_by_2 = d[d%2==0]
+print(div_by_2)
+
+c = d[(d > 2) & (a < 11)]
+print(c)
+
+fiveup = (d>5)|(d==5)
+print(fiveup)
+
+arrr=np.nonzero(d<5)
+print(arrr)
+
