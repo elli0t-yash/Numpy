@@ -187,3 +187,13 @@ print(p.sum(axis=1))
 # broadcasting(vector and scalar opertions)
 d1 = np.array([1.0,2.0])
 print(d1*1.6)
+
+a4 = np.array([[0.45053314, 0.17296777, 0.34376245, 0.5510652],
+               [0.54627315, 0.05093587, 0.40067661, 0.55645993],
+               [0.12697628, 0.82485143, 0.26590556, 0.56917101]])
+
+print(a4.sum())
+print(a4.min())
+print(a4.max())
+print(a4.min(axis=0)) # axis = 0 denotes column
+print(a4.min(axis=1)) # axis = 1 denotes row
