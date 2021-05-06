@@ -24,3 +24,9 @@ plt.show()
 plt.scatter(x,y)
 plt.show()
 
+# features are the independent variable or inputs 
+# labels are the dependent variable or output
+# no of features are called dimension
+# no of labels are called instances
+# features are represented by 'X' and labels are represented by 'y'
+
