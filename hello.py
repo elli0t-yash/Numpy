@@ -1,6 +1,8 @@
 import numpy as np
 import sys
 import pandas as pd
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 # a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 # print(a[0])
@@ -317,3 +319,23 @@ data1 = pd.read_csv('pd.csv')
 print(data1)
 
 np.savetxt('np.csv',a7,fmt='%.2f',delimiter=',',header='1, 2, 3, 4')
+
+a9 = np.array([2,1,5,7,4,6,8,14,10,9,18,20,22])
+plt.plot(a9)
+plt.show()
+
+# x2 = np.linspace(0,5,20)
+# y2 = np.linspace(0,10,20)
+# plt.plot(x,y,'purple')
+# plt.show()
+
+fig = plt.figure()
+ax = Axes3D(fig)
+X = np.arange(-5, 5, 0.15)
+Y = np.arange(-5, 5, 0.15)
+X, Y = np.meshgrid(X,Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis')
+plt.show()
