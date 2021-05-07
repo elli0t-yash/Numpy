@@ -1,7 +1,8 @@
 from sklearn import datasets
 import numpy as np
 from sklearn.model_selection import train_test_split
-
+from sklearn import svm
+from sklearn.metrics import accuracy_score
 
 # set of all datas
 iris = datasets.load_iris()
@@ -10,6 +11,8 @@ iris = datasets.load_iris()
 X = iris.data
 y = iris.target
 
+
+classes = ['Iris Setosa', 'Iris Vericolour', 'Iris Virginica']
 # print(X,y)
 print(X.shape)
 print(y.shape)
@@ -27,3 +30,17 @@ print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
 
+model = svm.SVC()
+model.fit(X_train, y_train)
+
+print(model)
+
+predictions = model.predict(X_test)
+acc = accuracy_score(y_test, predictions)
+
+print("Predictions:",predictions)
+print("actual:",y_test)
+print("accuracy:",acc)
+
+for i in range(len(predictions)):
+    print(classes[predictions[i]])
